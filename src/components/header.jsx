@@ -1,14 +1,14 @@
 import React from 'react'
 import { FaArrowLeft } from "react-icons/fa";
+import { Link } from 'react-router';
 
 
 function Header() {
     return (
         <div className=' h-24 text-white flex justify-around '>
-         <a className='uppercase' href="">home</a>
-         <a className='uppercase' href="">about</a>
-         <a className='uppercase' href="">Contact</a>
-         <a className='uppercase' href="">services</a>
+            <Link to={"/"}>
+            <h2 className="bg-gradient-to-r from-slate-400  to-white text-transparent bg-clip-text hover:scale-110 transition-all text-4xl mt-3 font-bold">TicketHub</h2>
+            </Link>
         </div>
     )
 }

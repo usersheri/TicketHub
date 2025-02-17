@@ -14,11 +14,11 @@ function ChangingTickets({ type = [] }) {
               rel="noopener noreferrer"
               className="block"
             >
-              <div className="bg-slate-900 hover:bg-red-600 transition-all rounded-lg shadow-md p-4 flex flex-col items-center text-center">
+              <div className="bg-slate-900 fle hover:bg-red-600 transition-all rounded-lg shadow-md p-4 flex sm:flex-col  items-center text-center">
                 <img 
                   src={item.logo || 'https://via.placeholder.com/100'} 
                   alt={item.name} 
-                  className="w-24 h-24 object-cover rounded-md border border-gray-200"
+                  className="w-24 h-24 object-cover rounded-md border  border-gray-200"
                 />
                 <div className="mt-3">
                   <h3 className="text-lg font-semibold text-white">{item.name}</h3>
