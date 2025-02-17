@@ -8,10 +8,10 @@ function HomeContent() {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Hero Section */}
-      <section className="bg-red-500 text-white py-16 text-center">
+      <section className="bg-blue-950 text-white py-16 text-center">
         <h1 className="text-4xl font-bold">Welcome to TicketHub</h1>
         <p className="text-lg mt-2">Your one-stop destination for booking tickets for movies, flights, trains, and buses!</p>
-        <Link to="/movies" className="mt-4 inline-block bg-white text-red-500 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
+        <Link to="/movies" className="mt-4 inline-block bg-white text-blue-950 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
           Book Now
         </Link>
       </section>
@@ -39,9 +39,9 @@ function HomeContent() {
         <h2 className="text-2xl font-bold text-gray-800 text-center">Popular Ticketing Platforms</h2>
         <div className="flex justify-center gap-6 mt-6 flex-wrap">
           {[
-            { id: 1, name: 'BookMyShow', link: 'https://www.bookmyshow.com', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/11/BookMyShow_Logo.png' },
-            { id: 2, name: 'RedBus', link: 'https://www.redbus.in', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/RedBus_logo.png' },
-            { id: 3, name: 'Skyscanner', link: 'https://www.skyscanner.com', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Skyscanner_Logo.png' }
+            { id: 1, name: 'BookMyShow', link: 'https://www.bookmyshow.com', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRareXwecIJ_COP-v3kUhJnSAn9aJ1H-2ODA&s' },
+            { id: 2, name: 'RedBus', link: 'https://www.redbus.in', logo: 'https://logowik.com/content/uploads/images/redbus2333.logowik.com.webp' },
+            { id: 3, name: 'Skyscanner', link: 'https://www.skyscanner.com', logo: 'https://logos.bugcrowdusercontent.com/logos/f385/4e29/59412af3/0ec567cf519e0103e54b114559943588_square_logo.png' }
           ].map((platform) => (
             <a key={platform.id} href={platform.link} target="_blank" rel="noopener noreferrer" className="bg-gray-100 p-4 rounded-lg shadow-md hover:shadow-lg transition flex flex-col items-center w-48">
               <img src={platform.logo} alt={platform.name} className="w-20 h-20 object-contain" />

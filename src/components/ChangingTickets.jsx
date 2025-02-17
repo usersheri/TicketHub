@@ -14,7 +14,7 @@ function ChangingTickets({ type = [] }) {
               rel="noopener noreferrer"
               className="block"
             >
-              <div className="bg-slate-900 fle hover:bg-red-600 transition-all rounded-lg shadow-md p-4 flex sm:flex-col  items-center text-center">
+              <div className="bg-slate-900 fle hover:bg-slate-600 transition-all rounded-lg shadow-xl p-4 flex sm:flex-col  items-center text-center">
                 <img 
                   src={item.logo || 'https://via.placeholder.com/100'} 
                   alt={item.name} 
